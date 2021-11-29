@@ -2,58 +2,21 @@
 	export const prerender = true;
 </script>
 
-<script>
-	import Counter from '$lib/Counter.svelte';
-</script>
-
 <svelte:head>
-	<title>Home</title>
+	<title>Beranda</title>
 </svelte:head>
 
-<section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
 
-		to your new<br />SvelteKit app
-	</h1>
+<section class="flex flex-row mt-6">
+	<div class="ml-24 w-3/5 flex flex-col space-y-8">
+		<article class="border">
+			<h1>Heello</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur consequatur dolore doloribus fugit hic maiores neque, possimus quisquam sapiente sed. Debitis est et molestiae perspiciatis saepe? Esse, omnis.</p>
+		</article>
+		<article class="border">
+			<h1>Heello</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur consequatur dolore doloribus fugit hic maiores neque, possimus quisquam sapiente sed. Debitis est et molestiae perspiciatis saepe? Esse, omnis.</p>
+		</article>
+	</div>
 
-	<h2>
-		try editing <strong class="baru">src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
 </section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>

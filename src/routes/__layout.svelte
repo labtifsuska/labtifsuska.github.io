@@ -1,46 +1,34 @@
 <script>
-	import Header from '$lib/header/Header.svelte';
+	import Aside from '$lib/Aside.svelte';
+	import Footer from '$lib/Footer.svelte';
+	import Header from '$lib/Header.svelte';
 	import '../tailwind.css';
 	import '../app.css';
 </script>
 
+<!-- Header here-->
 <Header />
 
+<!-- Content here -->
 <main>
-	<slot />
+	<div class="md:container md:mx-auto relative">
+
+		<!-- Side menu -->
+		<section class="fixed top-0 pt-28 border-r h-screen">
+			<div class="flex-none w-60">
+				<Aside />
+			</div>
+			<!-- Footer -->
+			<footer class="absolute bottom-0 text-sm px-2">
+				<Footer />
+			</footer>
+		</section>
+
+		<!-- Main content -->
+		<section class="ml-60 flex flex-col space-y-8 z-0">
+			<slot></slot>
+		</section>
+
+
+	</div>
 </main>
-
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
-
-<style>
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
-	}
-</style>

@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.baru {
-    @apply text-2xl;
+h1 {
+    @apply text-4xl font-bold text-indigo-500;
 }
