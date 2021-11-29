@@ -4,6 +4,9 @@ Ini adalah project untuk GH Pages Resmi Lab Teknik Informatika UIN Suska Riau.
 # Kontribusi
 Untuk kontribusi silahkan pull request.
 
+# Dependensi
+Web ini menggunakan SvelteKit dan TailwindCSS
+
 # Instalasi
 Cara menjalankan web ini di komputer lokal, silahkan ikuti cara-cara berikut:
 ```
