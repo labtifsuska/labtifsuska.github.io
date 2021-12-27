@@ -6,7 +6,7 @@
 				<nav class="content">
 					<ul class="flex">
 						<li class="hover:bg-indigo-400 hover:cursor-pointer py-8 px-6"><a href="/">Beranda</a></li>
-						<li class="hover:bg-indigo-400 hover:cursor-pointer py-8 px-6"><a href="/">Prodi TIF</a></li>
+						<li class="hover:bg-indigo-400 hover:cursor-pointer py-8 px-6"><a href="/prodi">Prodi TIF</a></li>
 						<li class="hover:bg-indigo-400 hover:cursor-pointer py-8 px-6"><a href="/">Discord</a></li>
 					</ul>
 				</nav>

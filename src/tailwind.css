@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-    @apply text-4xl font-bold text-indigo-500;
-}
+.page-section {
+    @apply flex items-center space-x-16;
+  }
+  
+  .button {
+    @apply inline-block font-bold px-6 py-4 border-gray-300 rounded-md shadow-md hover:shadow-lg; 
+  }
+  
+  .button.primary {
+    @apply bg-indigo-600 text-white hover:bg-indigo-500;
+  }
+
+
+.accordion {
+    @apply flex flex-col space-y-2;
+  }
+  
+  .accordion-item {
+    @apply bg-white border border-gray-200 hover:border-indigo-300 rounded-lg p-4;
+  }
+  
+  .accordion-item > .accordion-item-label {
+    @apply flex cursor-pointer;
+  }
+  
+  .accordion-item > .accordion-item-body {
+    @apply transition-all ease-in-out overflow-hidden h-0;
+  }
+  
+  .accordion-item > .accordion-item-body > p {
+    @apply py-4;
+  }
+  
+  .accordion-item.active {
+    @apply bg-indigo-100 border-indigo-300;
+  }
+  
+  .accordion-item.active > .accordion-item-body {
+    @apply h-40;
+  }
+  
